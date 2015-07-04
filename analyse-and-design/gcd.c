@@ -5,6 +5,13 @@ int gcd(int m, int n){
   if(n==0) return m;
   else return gcd(n,m%n);
 }
+int gcd2(int a,int b)
+  int t;
+  while(b!=0){
+    t=a%b;
+    a=b;
+    b=t;
+  }
 int main() {
   int a;
   int b;
